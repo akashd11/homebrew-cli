@@ -8,7 +8,7 @@ class Cli < Formula
   sha256 "30869eb3e08618104ceeeeb21001c69c70aeab2a510a02b31b444b527a54fef5"
   license "MIT"
 
-  depends_on "python@3.10"
+  #depends_on "python@3.10"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
