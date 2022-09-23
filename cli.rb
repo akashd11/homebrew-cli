@@ -17,6 +17,6 @@ class Cli < Formula
     #system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     puts "getting........................."
-    bin.install 'setup.py'
+    bin.install 'cli'
   end
 end
