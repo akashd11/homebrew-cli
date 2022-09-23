@@ -16,6 +16,7 @@ class Cli < Formula
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
     #system "./configure", *std_configure_args, "--disable-silent-rules"
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    puts "getting........................."
     bin.install 'cli'
   end
 end
