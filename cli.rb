@@ -16,8 +16,8 @@ class Cli < Formula
   end
 
   def install
-  puts "before................"
-    virtualenv_install_with_resources(:using => "python@3.10")
+    puts "before................"
+    virtualenv_install_with_resources
     puts "getting........................."
   end
 end
