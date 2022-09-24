@@ -20,12 +20,15 @@ class Cli < Formula
     sha256 "d9560e8e8dfa44b3562fbc9425042a0fd6d21956fcc2db0077f63f34253ab904"
   end
 
+  resource "cli" do
+    url "https://github.com/akashd11/cli/archive/refs/tags/v1.0.0.tar.gz"
+    sha256 "30869eb3e08618104ceeeeb21001c69c70aeab2a510a02b31b444b527a54fef5"
+  end
 
   def install
   puts "before................"
     virtualenv_install_with_resources(:using => "python@3.10")
     puts "getting........................."
-    bin.install 'cli'
   end
 end
 
