@@ -2,6 +2,7 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Cli < Formula
+  include Language::Python::Virtualenv
   desc "testing brew cli"
   homepage "https://github.com/akashd11/cli"
   url "https://github.com/akashd11/cli/archive/refs/tags/v1.3.tar.gz"
