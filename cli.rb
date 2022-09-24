@@ -8,6 +8,7 @@ class Cli < Formula
   url "https://github.com/akashd11/cli/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "30869eb3e08618104ceeeeb21001c69c70aeab2a510a02b31b444b527a54fef5"
 
+
   resource "click" do
     url "https://files.pythonhosted.org/packages/27/6f/be940c8b1f1d69daceeb0032fee6c34d7bd70e3e649ccac0951500b4720e/click-7.1.2.tar.gz"
     sha256 "d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"
@@ -20,7 +21,7 @@ class Cli < Formula
 
 
   def install
-    virtualenv_install_with_resources
+    virtualenv_install_with_resources, :using => "python@3.10"
     puts "getting........................."
     bin.install 'cli'
   end
